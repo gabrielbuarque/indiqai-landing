@@ -1,0 +1,43 @@
+{
+  "url": "https://gabrielbuarque.github.io/indiqai-landing/",
+  "deployCommit": "c3dc3c464bd3ba61d05253acbd8b07906f5dbf3f",
+  "errors": [],
+  "views": [
+    {
+      "width": 390,
+      "status": 200,
+      "layout": {
+        "viewport": 390,
+        "document": 390,
+        "title": "Seus clientes\nvoltando.",
+        "js": true,
+        "images": true
+      },
+      "stampVisible": true
+    },
+    {
+      "width": 1440,
+      "status": 200,
+      "layout": {
+        "viewport": 1440,
+        "document": 1440,
+        "title": "Seus clientes\nvoltando.",
+        "js": true,
+        "images": true
+      },
+      "stampVisible": true
+    }
+  ],
+  "press": {
+    "shadow": "rgb(117, 65, 238) 2px 2px 0px 0px",
+    "transform": "matrix(1, 0, 0, 1, 1, 1)"
+  },
+  "release": {
+    "shadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+    "transform": "matrix(1, 0, 0, 1, -2, -2)"
+  },
+  "faqOpen": true,
+  "faqClosed": true,
+  "inlineStyles": true,
+  "captureTime": "2026-09-30T08:38:35.537Z"
+}

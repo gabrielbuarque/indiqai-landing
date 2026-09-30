@@ -19,3 +19,7 @@ HTML semântico, FAQ visível com JSON-LD correspondente, metadados, sitemap, ro
 ## Design e verificação
 
 Referências e regras em `DESIGN.md`; fontes dos assets em `ASSET-SOURCES.md`; capturas e resultados em `docs/evidence/landing-redesign/`. Lighthouse é medido sob condições descritas no relatório, sem promessa de pontuação invariável em qualquer aparelho ou host.
+
+## Build para Pages
+
+`node build.mjs` prepara `site/` com HTML e CSS incorporado, JavaScript nativo e assets locais. A publicação usa esse diretório; documentos e capturas ficam somente no repositório. A pontuação final publicada está registrada no relatório de revisão.

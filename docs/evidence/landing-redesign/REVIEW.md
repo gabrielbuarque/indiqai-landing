@@ -29,3 +29,20 @@ Lighthouse 13.5.0, Chrome headless, throttling mobile padrão, servidor local co
 LCP 1.7s, Speed Index 1.2s, TBT 0ms, CLS 0. O CLI escreveu o relatório completo e depois apresentou EPERM ao remover seu perfil temporário no Windows; o relatório não contém runtimeError. O resultado é desta execução local, não uma garantia invariável no Pages ou em qualquer aparelho.
 
 A composição foi inspecionada visualmente pelo agente. A aprovação visual permanece com Gabriel.
+
+## Publicação verificada
+
+Versão do site: `c3dc3c464bd3ba61d05253acbd8b07906f5dbf3f`. Deploy GitHub Pages concluído no run `36690531039`. URL retornando 200, layout em 390 e 1440px sem overflow, imagens carregadas, CTA com resposta ao pressionar/soltar e FAQ abrindo/fechando na página pública. O build injeta o CSS no HTML para remover uma requisição bloqueante; o arquivo fonte continua separado.
+
+Última medição mobile publicada, `lighthouse-pages-final.json`:
+
+| Categoria | Nota |
+| --- | --- |
+| Performance | 99 |
+| Acessibilidade | 100 |
+| Boas práticas | 100 |
+| SEO | 100 |
+
+LCP 1.7s, Speed Index 2.5s, TBT 100ms, CLS 0. O alvo de 100 em Performance foi atingido localmente, mas ainda não na medição pública final.
+
+As primeiras execuções públicas marcaram 91 e 96 em Performance e 92 em SEO com timeout na busca de robots da raiz. Os relatórios dessas execuções também foram preservados, em vez de substituir os resultados. A busca direta confirmou `/robots.txt` da raiz com 404 e o arquivo do projeto com 200; no último audit, o teste da raiz foi considerado não aplicável. Robôs leem o arquivo na raiz do host, conforme https://developers.google.com/crawling/docs/robots-txt/create-robots-txt. Não foi criado um segundo repositório para modificar a raiz do domínio pessoal do Gabriel.
