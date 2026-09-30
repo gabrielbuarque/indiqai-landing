@@ -36,3 +36,19 @@ Fotografias ilustrativas; não representam instalações dos clientes. Unsplash,
 - Termos e privacidade: texto integral renderizado de https://indiqai.com/termos e https://indiqai.com/privacidade , acessado pela navegação original. Versão janeiro de 2026. Só classes, largura de leitura e o rótulo decorativo “Documento legal” mudaram; cláusulas, prazos e contatos preservados.
 - Instagram, WhatsApp, e-mail, razão social, CNPJ e endereço do rodapé: https://indiqai.com/ . O endereço dos documentos legais permanece como na fonte, inclusive a diferença de CEP em relação ao rodapé original.
 - Dois textos introdutórios do blog escritos para esta página, sobre recompensa e cartão digital. Sem datas, resultados ou depoimentos inventados.
+
+
+## Ajustes de 30/09 — novas marcas e movimento contínuo
+
+Clientes adicionados por solicitação direta de Gabriel; a condição de cliente vem dessa solicitação, não de inferência da pesquisa. Caroli retirada da apresentação.
+
+| Marca | Origem pública da imagem | Arquivo e resolução da fonte |
+|---|---|---|
+| Diva do Café | [Catálogo oficial ligado no Instagram @divadocafe](https://app.catalogodigital.online/divadocafe) | `diva.webp`, PNG original 1326×1319 |
+| Effó | [Linktree ligado no Instagram @effo.restaurante](https://linktr.ee/efforestaurante) | `effo.webp`, símbolo oficial 180×180; nome exibido abaixo sem recriar logotipo |
+| Nalu Poke by Effó | [Delivery Nalu no mesmo Linktree oficial](https://linktr.ee/efforestaurante) | `nalu.webp`, PNG original 300×300 |
+| ServClub | [Site oficial](https://www.servclub.com.br/sobre), `wp-content/uploads/2024/08/servclub_header.png` | `servclub.webp`, original 500×133 |
+| Óticas Visione Prime | [Parceiro Nubus Natal](https://www.nubusnatal.com.br/clubededescontos.html), `imagens/visione.png` | `visione.webp`, original 572×320; marca identificada pelo parceiro, fonte não é site próprio |
+| Galeteria DuChiquinho | [PraComprar, marca publicada como cliente](https://new.pracomprar.app.br/), `assets/galeteria-du-chiquinho-BYtcrnJ3.webp` | `duchiquinho.webp`, original 447×447, substitui versão 200×200 |
+
+Dunnas mantém arquivo obtido no recrutamento oficial (440 px); Conexão Hub mantém SVG do site oficial. Não foram encontrados arquivos vetoriais melhores de Dunnas/Effó nesta rodada. Conversão para WebP preserva proporção e cores, sem redesenho ou aumento artificial de resolução. Fotos do blog reutilizam as fotos já documentadas de café e restaurante.
