@@ -27,3 +27,11 @@
 ## Limites
 
 Auditoria automática complementa a revisão visual e não prova toda acessibilidade em tecnologias assistivas. Pontuação de desempenho é uma medição sob as condições do relatório, não garantia em todo aparelho ou momento. A publicação é conferida separadamente abaixo/na evidência de Pages.
+
+## Publicação conferida
+
+- Commit do site: `cd42f07204b5bafab88d339b0c5b76c6d346b8b4`; deploy Pages `36757570115`, concluído com sucesso.
+- As seis páginas HTML, llms.txt e sitemap retornam HTTP 200 e correspondem ao build, normalizando apenas CRLF/LF entre Windows e Linux. Asset antigo Lord Chicken retorna 404. AVIF publicado com MIME image/avif. Evidência em `published.json`.
+- Chrome de Gabriel: primeira tela e carrossel publicados inspecionados; imagem carregada, sem overflow e quatro logos presentes. Capturas `published-mobile.jpg` e `published-clients.jpg`. Viewport temporária restaurada ao terminar.
+- Lighthouse 13.5.0 no endereço público, mobile: primeira medição **98 / 100 / 100 / 100**; confirmação **100 / 100 / 100 / 100**, LCP 1,4s, Speed Index 2,5s, TBT 0ms, CLS 0. Ambos os relatórios foram mantidos, sem apagar a medição inicial. A confirmação usa Chrome headless padrão, sem a flag legada disable-gpu. A variação observada impede prometer pontuação fixa para toda execução.
+- Nenhum documento ou imagem de evidência faz parte do payload publicado: o workflow envia somente o diretório site/.
