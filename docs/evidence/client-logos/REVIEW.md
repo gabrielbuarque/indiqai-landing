@@ -11,3 +11,5 @@ O ticket continua com texto HTML. A inclinação foi retirada tanto do CSS quant
 Build concluído; revisão visual no Chrome em 1440 px, 390 px e 320 px. Sem transbordamento horizontal. As oito imagens carregaram, incluindo as duas versões SVG. Título e subtítulo centralizados, logos com nomes alinhados, ticket de visita sem inclinação e sem corte de texto em 320 px. Carrossel contínuo preservado. `git diff --check` sem erros.
 
 Publicação 71511e7 verificada no Chrome: GitHub Pages redireciona ao domínio configurado por Gabriel, https://oferta.indiqai.com/. Na primeira entrada do carrossel, duas logos com loading lazy demoraram a aparecer. Carregamento antecipado aplicado às oito marcas e à repetição para evitar lacunas no movimento.
+
+Versão final a53b7aa publicada com sucesso no workflow 36773278672. Verificação no domínio oferta.indiqai.com: oito de oito logos carregadas antes de entrar no carrossel (loading eager), 1440 px sem overflow. Card revisto em 390 px, upright e texto nativo; capturas published-desktop-clients.png e published-mobile-ticket.png. Site atualizado deixado no Chrome do usuário.
