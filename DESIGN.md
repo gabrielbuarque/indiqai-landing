@@ -14,14 +14,14 @@
 - Layout verificado primeiro em 320, 360, 390 e 430px, depois 768 e 1440px. Sem ocultar overflow global para disfarçar erros.
 - Hero revisada: “Uma visita pode virar muitas.” A explicação apresenta cartão digital, marca e recompensa. Punchpass inspira apenas o argumento de uma visita virar recorrência, sem suas métricas ou recursos.
 - Nada de métricas, depoimentos ou oferta grátis sem evidência. Brasa Burger é fictícia, indicada no texto alternativo e llms.txt; as legendas de demonstração foram removidas por pedido do Gabriel.
-- Cartão novo segue o formato da referência, gerado do zero no ChatGPT do Chrome do Gabriel. Fundo branco, sem a placa lavanda da hero; bolinha rosa e ticket de visita preservados.
+- Cartão novo segue o formato da referência, gerado do zero no ChatGPT do Chrome do Gabriel. Fundo branco, sem a placa lavanda da hero; detalhe rosa de recompensa e ticket de visita preservados.
 - QR sem rotação, 37 módulos, 222px ou 185px. Na segunda etapa, ícone de compartilhar. Demais ícones e botões aprovados preservados.
-- As quatro marcas informadas pelo Gabriel aparecem em um carrossel contínuo com pausa, foco/hover, toque, redução de movimento e suspensão fora da tela/aba oculta. Essa animação contínua é a exceção explicitamente solicitada.
+- As oito marcas informadas pelo Gabriel aparecem em carrossel contínuo de 72 s. Não pausar no hover/toque e não mostrar controle de continuar, por pedido explícito. Respeitar movimento reduzido e suspender fora da tela/aba oculta. Logos transparentes com recorte pelo conteúdo, escala óptica individual, mesma área de exposição e nomes em texto nativo. Título e subtítulo centralizados, com placa lavanda e camada rosa atrás de “Quem já está”. A referência verbal ao produto é masculina: “o IndiqAI”.
 - Termos e privacidade preservam o texto original; blog tem índice e dois artigos introdutórios. Rodapé inclui identificação da empresa e canais oficiais.
 
 ## Motion
 
-O gesto central é uma visita virar um selo: leitura do QR, preenchimento do selo e confirmação, uma única vez ao entrar em vista. A cena inicial tem uma chegada curta da confirmação. Conteúdo visível por padrão.
+O gesto central é uma visita virar um selo: leitura do QR, preenchimento do selo e confirmação, uma única vez ao entrar em vista. A cena inicial tem uma chegada curta da confirmação e um loop de respiração de 7 s no celular. O ticket de visita é reto, com título de 16–17 px e apoio de 12–13 px para nitidez. Conteúdo visível por padrão.
 
 - Feedback de botão: 160–180ms. Menu: 180ms. FAQ: altura animada em 280ms, abrindo e fechando, interrompível. Cena de registro: sequência curta de 1.37s.
 - CSS e Web Animations API; sem biblioteca de animação ou JavaScript de terceiros.

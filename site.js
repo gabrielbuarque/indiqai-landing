@@ -62,9 +62,9 @@ function playScene(scene) {
   if (motionPreference.matches) return;
   if (scene.dataset.scene === 'hero') {
     animate(scene.querySelector('.visit-ticket'), [
-      {transform: 'translateY(18px) rotate(-5deg)', opacity: .45},
-      {transform: 'translateY(-3px) rotate(-2deg)', opacity: 1, offset: .78},
-      {transform: 'rotate(-2deg)', opacity: 1}
+      {transform: 'translateY(18px)', opacity: .45},
+      {transform: 'translateY(-3px)', opacity: 1, offset: .78},
+      {transform: 'translateY(0)', opacity: 1}
     ], {duration: 680, easing: ease, delay: 180});
   } else {
     animate(scene.querySelector('.scan-line'), [

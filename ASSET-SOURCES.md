@@ -52,3 +52,11 @@ Clientes adicionados por solicitação direta de Gabriel; a condição de client
 | Galeteria DuChiquinho | [PraComprar, marca publicada como cliente](https://new.pracomprar.app.br/), `assets/galeteria-du-chiquinho-BYtcrnJ3.webp` | `duchiquinho.webp`, original 447×447, substitui versão 200×200 |
 
 Dunnas mantém arquivo obtido no recrutamento oficial (440 px); Conexão Hub mantém SVG do site oficial. Não foram encontrados arquivos vetoriais melhores de Dunnas/Effó nesta rodada. Conversão para WebP preserva proporção e cores, sem redesenho ou aumento artificial de resolução. Fotos do blog reutilizam as fotos já documentadas de café e restaurante.
+
+## Padronização de 30/09 — título, logos e ticket
+
+Tratamento realizado no ChatGPT aberto no Chrome de Gabriel, com os arquivos originais do repositório. Saídas baixadas: `client-logos-final.zip` e `client-logos-corrections.zip`. Foi solicitado processamento dos pixels existentes, sem redesenho generativo de letras ou símbolos. Originais mantidos em `assets/clients/`; apresentação em `assets/clients/clean/`.
+
+Fundos e margens removidos; marcas brancas receberam versão positiva para a superfície branca: DuChiquinho em laranja, Nalu e partes pequenas da Diva em tinta escura; Conexão preserva o verde. Recortes raster convertidos para WebP sem perda, sem redimensionar. Conexão continua vetorial. `diva.svg` é um invólucro de imagem raster embutida, com enquadramento e correção de alfa residual; não é uma vetorização. Os nomes aparecem em HTML, com tamanho e alinhamento comuns.
+
+A limpeza não recupera detalhes ausentes nas fontes. Effó e Dunnas continuam limitados pela resolução original documentada acima; não se declara nova resolução oficial ou detalhe inventado.
