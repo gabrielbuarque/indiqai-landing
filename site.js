@@ -94,3 +94,39 @@ if ('IntersectionObserver' in window) {
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) activeAnimations.forEach(animation => animation.finish());
 });
+
+/* Requested continuous logo reel. A real list remains usable without motion or JS. */
+const clients = document.querySelector('.clients-section');
+if (clients) {
+  const pause = clients.querySelector('.carousel-pause');
+  const viewport = clients.querySelector('.clients-viewport');
+  let userPaused = false;
+  let inView = false;
+  let hovered = false;
+  let focused = false;
+  function syncClients() {
+    const reduced = motionPreference.matches;
+    clients.classList.toggle('is-animated', !reduced);
+    clients.classList.toggle('is-paused', userPaused || hovered || focused || !inView || document.hidden);
+    pause.hidden = reduced;
+    pause.setAttribute('aria-pressed', String(userPaused));
+    pause.textContent = userPaused ? 'Continuar movimento' : 'Pausar movimento';
+  }
+  pause.addEventListener('click', () => { userPaused = !userPaused; syncClients(); });
+  clients.addEventListener('mouseenter', () => { hovered = true; syncClients(); });
+  clients.addEventListener('mouseleave', () => { hovered = false; syncClients(); });
+  clients.addEventListener('focusin', () => { focused = true; syncClients(); });
+  clients.addEventListener('focusout', event => { focused = clients.contains(event.relatedTarget); syncClients(); });
+  viewport.addEventListener('pointerdown', () => { userPaused = true; syncClients(); });
+  viewport.addEventListener('keydown', event => {
+    if (['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) {
+      userPaused = true; syncClients();
+    }
+  });
+  motionPreference.addEventListener('change', syncClients);
+  document.addEventListener('visibilitychange', syncClients);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => { inView = entries[0].isIntersecting; syncClients(); }, {threshold:.05}).observe(clients);
+  } else { inView = true; }
+  syncClients();
+}

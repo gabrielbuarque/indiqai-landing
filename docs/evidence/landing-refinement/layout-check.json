@@ -1,0 +1,115 @@
+{
+  "mobileChecks": [
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 185,
+      "qrRotation": "matrix(1, 0, 0, 1, -128.5, 0)",
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 222,
+      "qrRotation": "matrix(1, 0, 0, 1, -143, 0)",
+      "scrollWidth": 345,
+      "width": 360
+    },
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 222,
+      "qrRotation": "matrix(1, 0, 0, 1, -143, 0)",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 222,
+      "qrRotation": "matrix(1, 0, 0, 1, -143, 0)",
+      "scrollWidth": 415,
+      "width": 430
+    },
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 222,
+      "qrRotation": "matrix(1, 0, 0, 1, -151, 0)",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "buttonShadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+      "heroText": "Uma visita pode\nvirar muitas.",
+      "overflow": [],
+      "qr": 222,
+      "qrRotation": "matrix(1, 0, 0, 1, -151, 0)",
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "routeChecks": [
+    {
+      "brandLoaded": true,
+      "canonical": "https://indiqai.com/blog/",
+      "font": "Poppins, system-ui, sans-serif",
+      "h1": "Boas ideias para\na próxima visita.",
+      "h2Count": 2,
+      "scrollWidth": 305,
+      "title": "Ideias para clientes voltarem — IndiqAI",
+      "url": "http://127.0.0.1:4173/site/blog/",
+      "width": 320
+    },
+    {
+      "brandLoaded": true,
+      "canonical": "https://indiqai.com/blog/como-escolher-a-recompensa/",
+      "font": "Poppins, system-ui, sans-serif",
+      "h1": "Uma recompensa que dá vontade de voltar.",
+      "h2Count": 4,
+      "scrollWidth": 305,
+      "title": "Uma recompensa que dá vontade de voltar. — IndiqAI",
+      "url": "http://127.0.0.1:4173/site/blog/como-escolher-a-recompensa/",
+      "width": 320
+    },
+    {
+      "brandLoaded": true,
+      "canonical": "https://indiqai.com/blog/cartao-fidelidade-digital/",
+      "font": "Poppins, system-ui, sans-serif",
+      "h1": "Do papel ao celular. Sem complicar o balcão.",
+      "h2Count": 4,
+      "scrollWidth": 305,
+      "title": "Do papel ao celular. Sem complicar o balcão. — IndiqAI",
+      "url": "http://127.0.0.1:4173/site/blog/cartao-fidelidade-digital/",
+      "width": 320
+    },
+    {
+      "brandLoaded": true,
+      "canonical": "https://indiqai.com/termos/",
+      "font": "Poppins, system-ui, sans-serif",
+      "h1": "Termos de Uso – IndiqAI (B2B e B2C)",
+      "h2Count": 23,
+      "scrollWidth": 305,
+      "title": "Termos de uso — IndiqAI",
+      "url": "http://127.0.0.1:4173/site/termos/",
+      "width": 320
+    },
+    {
+      "brandLoaded": true,
+      "canonical": "https://indiqai.com/privacidade/",
+      "font": "Poppins, system-ui, sans-serif",
+      "h1": "Política de Privacidade – Plataforma IndiqAI",
+      "h2Count": 15,
+      "scrollWidth": 305,
+      "title": "Política de privacidade — IndiqAI",
+      "url": "http://127.0.0.1:4173/site/privacidade/",
+      "width": 320
+    }
+  ]
+}
