@@ -13,5 +13,3 @@
 - `assets/demo-qr.svg`: generated locally with the qrcode package; encodes `https://card.indiqai.com/#inicio`. Labeled as a demonstration on the page.
 - `assets/fonts/poppins-*.woff2`: supplied local fonts, license `assets/fonts/OFL.txt`.
 - Inline SVG icons authored for this page. No AI-generated imagery.
-
-
