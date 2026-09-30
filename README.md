@@ -1,12 +1,21 @@
 # IndiqAI Landing
 
-Standalone, framework-free landing page for IndiqAI. Built with semantic HTML, locally hosted Poppins fonts and CSS; no third-party scripts, analytics, remote fonts, or remote image requests. Brand files and the small WebP card photo are local.
+Landing estática em HTML, CSS e JavaScript nativo. Fontes, marca, imagens e QR locais; sem analytics, scripts ou imagens de terceiros durante o carregamento.
 
-## Preview locally
+**Publicação:** https://gabrielbuarque.github.io/indiqai-landing/
+
+## Preview
 
 ```sh
 node preview-server.mjs
 ```
 
-The canonical and SEO URLs target `https://indiqai.com/`. Confirm the final domain, the getting-started URL, product claims, and privacy/legal links before publishing. Lighthouse 100 is a target, not a guarantee; results depend on the production host and test conditions.
+A aplicação abre em http://127.0.0.1:4173. O workflow publica apenas os arquivos do site e `assets/`, sem documentos de revisão.
 
+## Conteúdo e SEO
+
+HTML semântico, FAQ visível com JSON-LD correspondente, metadados, sitemap, robots e llms.txt. Os CTAs levam ao IndiqAI Card. Canonical e sitemap apontam para `https://indiqai.com/`, o domínio oficial pretendido; o Pages é o preview público e não altera o domínio de produção.
+
+## Design e verificação
+
+Referências e regras em `DESIGN.md`; fontes dos assets em `ASSET-SOURCES.md`; capturas e resultados em `docs/evidence/landing-redesign/`. Lighthouse é medido sob condições descritas no relatório, sem promessa de pontuação invariável em qualquer aparelho ou host.

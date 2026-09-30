@@ -1,19 +1,30 @@
-# Design direction — IndiqAI landing
+# Direção visual — IndiqAI
 
-## North star
-A bright, mobile-first local-business landing that turns the digital loyalty card into a simple story: invite a customer, record a visit, give them a reason to return.
+## Referências que definem esta versão
 
-## Foundation
-IndiqAI official logo, palette, and supplied Poppins fonts. Compositional reference: Refero Styles 7shifts (`https://styles.refero.design/style/736830b5-90b1-47b0-99dd-d79454a0d22a`). Button treatment follows IndiqAI Card `develop` at commit `0a8c93e4c06236ce9f234eb759603433b853d11e` (`src/styles.css`): neutral fill, dark outline, and a 3px violet offset shadow on hover; this landing adds a short press response and honors reduced-motion settings.
+1. Storyboard mobile fornecido pelo Gabriel (`1000828066.jpg`): branco/lavanda, promessa curta, cartão e QR como protagonistas, três passos, categorias com fotos e encerramento violeta.
+2. Login desktop do IndiqAI Card, branch `develop`, commit `0a8c93e4c06236ce9f234eb759603433b853d11e`: Poppins, contornos escuros, superfícies claras, sombras deslocadas, violeta/rosa/amarelo. Renderizado em 1440 × 900 para consulta.
+3. Refero Styles / 7shifts como referência secundária de hierarquia: https://styles.refero.design/style/736830b5-90b1-47b0-99dd-d79454a0d22a
 
-## Tokens
-- Canvas: `#ebebeb`; surface: `#ffffff`; ink: `#171719`; muted: `#626269` (accessible text on the official gray canvas); line: `#e5e7eb`.
-- Brand purple: `#7541ee`; soft purple: `#f4efff`; warm reward accent: `#f4b512`. Official transparent logo: `assets/brand/indiqai-logo.webp` (lossless conversion from supplied PNG); official icon: `assets/brand/indiqai-icon.png`.
-- Typeface: locally hosted Poppins 400/500/600/700.
-- 4px spacing base; 1200px max content width; section spacing 72–104px desktop, 56–72px mobile; cards 20–28px radius, large hero surfaces 36px.
+## Identidade e composição
 
-## One memorable move
-A product card shown at near-real phone scale alongside the plain promise, so the buyer sees the loyalty experience immediately without a heavy hero image.
+- Cores oficiais: violeta #7541ee, rosa #fb517a, amarelo #f4b512, preto #171719, neutro #ebebeb. Fundo branco e lavanda #f4efff conforme o storyboard.
+- Violeta de texto #6432d2 para contraste; texto secundário #57545f. Poppins local.
+- Botões de 58px, contorno de 1.5px, raio de 10px. Camada violeta em hover e sempre presente em dispositivos de toque; resposta ao pressionar. O CTA no fundo violeta usa camada rosa.
+- Layout verificado primeiro em 320, 360, 390 e 430px, depois 768 e 1440px. Sem ocultar overflow global para disfarçar erros.
+- Frases curtas: “Seus clientes voltando.”, “Do seu jeito. Em 3 passos.” e “Um motivo a mais para voltar.”
+- Nada de métricas, depoimentos ou oferta grátis sem evidência. O cartão e o QR são identificados como ilustrativos.
 
-## Reject
-Invented ROI/client-count claims, “AI-powered” messaging, generic dashboard collage, excessive gradients, large blocking animation, and remote font/image dependencies.
+## Motion
+
+O gesto central é uma visita virar um selo: leitura do QR, preenchimento do selo e confirmação, uma única vez ao entrar em vista. A cena inicial tem uma chegada curta da confirmação. Conteúdo visível por padrão.
+
+- Feedback de botão: 160–180ms. Menu: 180ms. FAQ: altura animada em 280ms, abrindo e fechando, interrompível. Cena de registro: sequência curta de 1.37s.
+- CSS e Web Animations API; sem biblioteca de animação ou JavaScript de terceiros.
+- `prefers-reduced-motion` elimina deslocamentos animados; FAQ mantém resposta imediata. Animações finalizadas quando a aba fica oculta.
+- Teclado, Escape no menu, foco visível, estado `aria-expanded` e FAQ nativo sem JavaScript.
+- Referências: https://motion.dev/docs/react-layout-animations e https://webflow.com/blog/motion-and-accessibility
+
+## Evidência
+
+Capturas e relatório da revisão em `docs/evidence/landing-redesign/`. Capturas representam esta versão; a aprovação visual continua sendo do Gabriel.

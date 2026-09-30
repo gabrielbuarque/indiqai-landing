@@ -1,0 +1,444 @@
+{
+  "date": "2026-09-30T08:21:07.240Z",
+  "url": "http://127.0.0.1:4173",
+  "viewports": [
+    {
+      "viewport": 320,
+      "document": 320,
+      "body": 320,
+      "heroButton": {
+        "shadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 40.265625
+        },
+        {
+          "text": "voltando.",
+          "height": 40.265625
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    },
+    {
+      "viewport": 360,
+      "document": 360,
+      "body": 360,
+      "heroButton": {
+        "shadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 42.71875
+        },
+        {
+          "text": "voltando.",
+          "height": 42.71875
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    },
+    {
+      "viewport": 390,
+      "document": 390,
+      "body": 390,
+      "heroButton": {
+        "shadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 46.296875
+        },
+        {
+          "text": "voltando.",
+          "height": 46.296875
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    },
+    {
+      "viewport": 430,
+      "document": 430,
+      "body": 430,
+      "heroButton": {
+        "shadow": "rgb(117, 65, 238) 5px 5px 0px 0px",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 51.03125
+        },
+        {
+          "text": "voltando.",
+          "height": 51.03125
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    },
+    {
+      "viewport": 768,
+      "document": 768,
+      "body": 768,
+      "heroButton": {
+        "shadow": "none",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 60.3125
+        },
+        {
+          "text": "voltando.",
+          "height": 60.3125
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    },
+    {
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440,
+      "heroButton": {
+        "shadow": "none",
+        "height": 58
+      },
+      "h1Lines": [
+        {
+          "text": "Seus clientes",
+          "height": 83.1875
+        },
+        {
+          "text": "voltando.",
+          "height": 83.1875
+        }
+      ],
+      "overflow": [],
+      "images": [
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/card-reference.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/demo-qr.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/restaurantes.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/cafe-da-praca.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/barbearias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/beleza.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/academias.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/photos/comercio.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/brand/indiqai-logo.webp",
+          "loaded": true
+        }
+      ],
+      "faqMatches": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "faq": {
+    "closed": 68,
+    "opening": 152.671875,
+    "opened": 181.5625,
+    "closing": 120.8125,
+    "closedAgain": 68,
+    "keyboardOpen": true,
+    "interruption": {
+      "open": false,
+      "aria": "false",
+      "height": "",
+      "overflow": ""
+    }
+  },
+  "reducedMotion": {
+    "open": true,
+    "aria": "true",
+    "animationCount": 0
+  },
+  "menuOpen": true,
+  "menuClosed": true,
+  "noJavaScript": {
+    "faqOpen": true,
+    "navVisible": true
+  }
+}
