@@ -21,11 +21,7 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
       - name: Prepare public site files
-        run: |
-          mkdir -p site
-          cp index.html styles.css site.js llms.txt robots.txt sitemap.xml site/
-          cp -R assets site/assets
-          touch site/.nojekyll
+        run: node build.mjs
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
