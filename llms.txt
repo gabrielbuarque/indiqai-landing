@@ -1,0 +1,17 @@
+# IndiqAI
+
+IndiqAI is a relationship and customer-data platform for local businesses. Digital loyalty is the entry point: each establishment can create a program under its own brand, set its own rewards, invite customers, and encourage repeat visits.
+
+## For visitors
+- Audience: owners and managers of local businesses with recurring customers.
+- Customers participate in the loyalty program of the business they visit.
+- Each business has its own rules and rewards; points do not transfer between businesses.
+- The page's product card is an illustrative example, not a live customer account or performance result.
+
+## Main pages
+- [Home](https://indiqai.com/): overview of IndiqAI's digital loyalty experience for local businesses.
+
+## Learn more
+- [How the loyalty program works](https://indiqai.com/#como-funciona)
+- [Frequently asked questions](https://indiqai.com/#duvidas)
+- [Get started](https://card.indiqai.com/#inicio)
