@@ -60,3 +60,6 @@ Tratamento realizado no ChatGPT aberto no Chrome de Gabriel, com os arquivos ori
 Fundos e margens removidos; marcas brancas receberam versão positiva para a superfície branca: DuChiquinho em laranja, Nalu e partes pequenas da Diva em tinta escura; Conexão preserva o verde. Recortes raster convertidos para WebP sem perda, sem redimensionar. Conexão continua vetorial. `diva.svg` é um invólucro de imagem raster embutida, com enquadramento e correção de alfa residual; não é uma vetorização. Os nomes aparecem em HTML, com tamanho e alinhamento comuns.
 
 A limpeza não recupera detalhes ausentes nas fontes. Effó e Dunnas continuam limitados pela resolução original documentada acima; não se declara nova resolução oficial ou detalhe inventado.
+
+## Poppins oficial — correção de 30/09
+Arquivos anteriores continham somente um subconjunto sem caracteres latinos. Substituídos pelos pesos 400/500/600/700 da Poppins v24 servida por Google Fonts: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap . Fontes convertidas localmente para WOFF2, com caracteres latinos, acentos portugueses e pontuação. OFL mantida. Títulos, CTAs e destaques usam Poppins; corpo e interface usam a família nativa do sistema, conforme orientação de Karen enviada por Gabriel.

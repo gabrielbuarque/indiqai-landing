@@ -9,7 +9,7 @@
 ## Identidade e composição
 
 - Cores oficiais: violeta #7541ee, rosa #fb517a, amarelo #f4b512, preto #171719, neutro #ebebeb. Fundo branco e lavanda #f4efff conforme o storyboard.
-- Violeta de texto #7541ee, igual à paleta oficial; texto secundário #57545f. Contraste aprovado no audit. Poppins local.
+- Violeta de texto #7541ee, igual à paleta oficial; texto secundário #57545f. Contraste aprovado no audit. Poppins oficial local nos títulos, CTAs e destaques; fonte nativa do sistema nos parágrafos e controles de interface. Arquivos latinos com acentos portugueses (correção de 30/09 após orientação de Karen).
 - Botões de 58px, contorno de 1.5px, raio de 10px. Camada violeta em hover e sempre presente em dispositivos de toque; resposta ao pressionar. O CTA no fundo violeta usa camada rosa.
 - Layout verificado primeiro em 320, 360, 390 e 430px, depois 768 e 1440px. Sem ocultar overflow global para disfarçar erros.
 - Hero revisada: “Uma visita pode virar muitas.” A explicação apresenta cartão digital, marca e recompensa. Punchpass inspira apenas o argumento de uma visita virar recorrência, sem suas métricas ou recursos.
