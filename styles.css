@@ -125,6 +125,11 @@ h1,h2,h3{letter-spacing:-.04em;text-wrap:balance}
 @media(max-width:767px){.clients-heading{margin-bottom:30px}.clients-heading h2{font-size:30px}.clients-title-label{padding:6px 19px 8px;margin-bottom:15px}.clients-heading p{font-size:13px;max-width:290px;margin-inline:auto}.visit-ticket{padding:15px 14px;gap:11px}.visit-ticket strong{font-size:16px}.visit-ticket div>span{font-size:12px}.ticket-check{width:40px;height:40px}}
 @media(max-width:350px){.clients-heading h2{font-size:28px}.visit-ticket{padding:13px 11px;gap:9px}.visit-ticket div>span{font-size:12px}.ticket-check{width:36px;height:36px}}
 
+/* A third seal begins lightly filled; the scan sequence completes it before revealing the ticket. */
+.demo-stamps .stamp-new{opacity:.48;transform:scale(.94)}
+.demo-stamps .stamp-new.is-registered{opacity:1;transform:scale(1)}
+.qr-scene.sequence-pending .reward-ticket{opacity:0;transform:translateY(14px) rotate(2deg)}
+
 /* Same optical frame and live label for every client, without colored image tiles. */
 .clients-group .client-item{width:210px;height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
 .client-mark{height:92px;width:190px;display:grid;place-items:center}

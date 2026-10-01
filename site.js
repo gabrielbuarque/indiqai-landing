@@ -10,7 +10,10 @@ function animate(element, frames, options) {
   return animation;
 }
 motionPreference.addEventListener('change', () => {
-  if (motionPreference.matches) activeAnimations.forEach(animation => animation.finish());
+  if (motionPreference.matches) {
+    activeAnimations.forEach(animation => animation.finish());
+    document.querySelector('.qr-scene')?.classList.remove('sequence-pending');
+  }
 });
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.nav');
@@ -58,7 +61,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 /* A single visit and a new stamp: a short story, played once in view. */
-function playScene(scene) {
+async function playScene(scene) {
   if (motionPreference.matches) return;
   if (scene.dataset.scene === 'hero') {
     animate(scene.querySelector('.visit-ticket'), [
@@ -67,24 +70,32 @@ function playScene(scene) {
       {transform: 'translateY(0)', opacity: 1}
     ], {duration: 680, easing: ease, delay: 180});
   } else {
-    animate(scene.querySelector('.scan-line'), [
+    const scan = animate(scene.querySelector('.scan-line'), [
       {transform: 'translateY(0)', opacity: 0},
       {transform: 'translateY(4px)', opacity: 1, offset: .12},
       {transform: 'translateY(145px)', opacity: 1, offset: .82},
       {transform: 'translateY(153px)', opacity: 0}
-    ], {duration: 850, easing: 'ease-in-out'});
-    animate(scene.querySelector('.stamp-new'), [
-      {background: '#fff', transform: 'scale(.85)'},
-      {background: '#f4b512', transform: 'scale(1.15)', offset: .7},
-      {background: '#f4b512', transform: 'scale(1)'}
-    ], {duration: 360, delay: 650, easing: ease});
+    ], {duration: 2300, easing: 'ease-in-out'});
+    if (scan) await scan.finished.catch(() => {});
+    if (!scene.isConnected) return;
+    const stamp = animate(scene.querySelector('.stamp-new'), [
+      {background: '#f4b512', opacity: .48, transform: 'scale(.94)'},
+      {background: '#f4b512', opacity: 1, transform: 'scale(1.15)', offset: .7},
+      {background: '#f4b512', opacity: 1, transform: 'scale(1)'}
+    ], {duration: 360, easing: ease});
+    if (stamp) await stamp.finished.catch(() => {});
+    if (!scene.isConnected) return;
+    scene.querySelector('.stamp-new').classList.add('is-registered');
+    scene.classList.remove('sequence-pending');
     animate(scene.querySelector('.reward-ticket'), [
-      {transform: 'translateY(14px) rotate(0)', opacity: .45},
+      {transform: 'translateY(14px) rotate(2deg)', opacity: 0},
       {transform: 'translateY(-2px) rotate(2deg)', opacity: 1, offset: .8},
       {transform: 'rotate(2deg)', opacity: 1}
-    ], {duration: 520, delay: 850, easing: ease});
+    ], {duration: 520, easing: ease});
   }
 }
+const qrScene = document.querySelector('.qr-scene');
+if (!motionPreference.matches && 'IntersectionObserver' in window) qrScene?.classList.add('sequence-pending');
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
     if (entry.isIntersecting) { observer.unobserve(entry.target); playScene(entry.target); }
