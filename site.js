@@ -79,7 +79,7 @@ async function playScene(scene) {
     if (scan) await scan.finished.catch(() => {});
     if (!scene.isConnected) return;
     const stamp = animate(scene.querySelector('.stamp-new'), [
-      {background: '#f4b512', opacity: 0, transform: 'scale(.94)'},
+      {background: '#fff', opacity: 1, transform: 'scale(1)'},
       {background: '#f4b512', opacity: 1, transform: 'scale(1.15)', offset: .7},
       {background: '#f4b512', opacity: 1, transform: 'scale(1)'}
     ], {duration: 360, easing: ease});
