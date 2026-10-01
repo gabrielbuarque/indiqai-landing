@@ -147,3 +147,16 @@ h1,h2,h3{letter-spacing:-.04em;text-wrap:balance}
 
 /* Official brand typography for headings and emphasis; UI and body use the native sans. */
 .button,.visit-ticket strong,.benefit-strip strong,.audience-card span,.eyebrow{font-family:Poppins,system-ui,sans-serif}
+
+/* Keep editorial copy in intentional phrases on wide screens, then let mobile wrap naturally. */
+.hero-lede span{display:block}
+.journal-copy :is(h2,h3) span{display:block}
+p{text-wrap:pretty}
+@media(max-width:767px){.hero-lede span{display:inline}}
+.clients-heading h2{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;line-height:1.2}
+.clients-title-label{padding:9px 24px;margin:0;font-size:1.04em}
+.owner-heading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:44px;align-items:end}
+.owner-heading h2{grid-column:1 / span 2}
+.owner-heading>p{grid-column:3;max-width:none;margin:0}
+@media(max-width:1000px){.owner-heading{display:block}.owner-heading>p{max-width:none;margin-top:22px}}
+@media(max-width:767px){.clients-heading h2{gap:9px;line-height:1.2}.clients-title-label{padding:7px 19px;margin:0;font-size:1em}.owner-heading{display:block}}
