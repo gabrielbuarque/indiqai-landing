@@ -174,6 +174,8 @@ Respeitar `prefers-reduced-motion`, pausar loops fora de vista/aba oculta e entr
 
 O selo vazio conserva o contorno preto e o fundo branco. Animar apenas o preenchimento amarelo depois do scanner; não aplicar opacidade ao círculo inteiro. O ticket aparece só depois do preenchimento.
 
+Movimento deve responder à ação ou tornar o produto mais compreensível. CTAs preservam a face em camadas no toque; hover aprimora a resposta no desktop, sem esconder a interação no celular. FAQ abre e fecha com transição. O loop do mockup é fluido e não para no hover; pode pausar fora da tela/aba e respeita `prefers-reduced-motion`. Antes de implementar ou ajustar uma animação, definir o que se vê antes, durante e depois; conferir a cascata e validar cada estado no navegador, principalmente no celular. Opacidade deve afetar só a camada cujo significado realmente muda.
+
 ## 8. Layout / Responsive
 
 **Mobile primeiro:** 320, 360, 390 e 430 px; depois 768 e 1440 px. Breakpoints atuais: 350, 767/768 e 1000 px. Ordem narrativa compreensível sem depender do desktop.
