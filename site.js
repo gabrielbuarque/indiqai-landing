@@ -75,11 +75,11 @@ async function playScene(scene) {
       {transform: 'translateY(4px)', opacity: 1, offset: .12},
       {transform: 'translateY(145px)', opacity: 1, offset: .82},
       {transform: 'translateY(153px)', opacity: 0}
-    ], {duration: 2300, easing: 'ease-in-out'});
+    ], {duration: 1500, easing: 'ease-in-out'});
     if (scan) await scan.finished.catch(() => {});
     if (!scene.isConnected) return;
     const stamp = animate(scene.querySelector('.stamp-new'), [
-      {background: '#f4b512', opacity: .48, transform: 'scale(.94)'},
+      {background: '#f4b512', opacity: 0, transform: 'scale(.94)'},
       {background: '#f4b512', opacity: 1, transform: 'scale(1.15)', offset: .7},
       {background: '#f4b512', opacity: 1, transform: 'scale(1)'}
     ], {duration: 360, easing: ease});
