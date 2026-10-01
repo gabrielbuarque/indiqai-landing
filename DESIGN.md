@@ -164,13 +164,15 @@ Movimento mostra relação e resposta: visita vira selo; celular respira; confir
 | Menu | 180 ms | Feedback de abertura |
 | FAQ | 280 ms | Abrir e fechar, interrompível |
 | Ticket da hero | 680 ms + atraso de 180 ms | Chegada uma vez; termina reto |
-| QR → selo → confirmação | Aproximadamente 1,37 s | Uma vez ao entrar em vista |
+| QR → selo → confirmação | Leitura de 1,5 s; selo de 360 ms; ticket de 520 ms | Sequência sem sobreposição |
 | Celular | Loop de 7 s; até 9 px vertical; rotação −3° a −1,7° | Respiração discreta, sem tremor |
 | Clientes | Loop linear de 72 s | Sem vazio entre repetições |
 
 Easing de resposta: `cubic-bezier(.22, 1, .36, 1)`. Celular: `cubic-bezier(.45, 0, .55, 1)`. Preferir transform/opacity; altura é justificada no FAQ. CSS e Web Animations API atendem ao site: a estética não exige Framer, Webflow ou biblioteca adicional.
 
 Respeitar `prefers-reduced-motion`, pausar loops fora de vista/aba oculta e entregar estado final legível. Não transferir loops promocionais para scanner, tabela ou confirmação operacional sem avaliar a tarefa.
+
+O selo vazio conserva o contorno preto e o fundo branco. Animar apenas o preenchimento amarelo depois do scanner; não aplicar opacidade ao círculo inteiro. O ticket aparece só depois do preenchimento.
 
 ## 8. Layout / Responsive
 
