@@ -152,7 +152,6 @@ h1,h2,h3{letter-spacing:-.04em;text-wrap:balance}
 .hero-lede span{display:block}
 .journal-copy :is(h2,h3) span{display:block}
 p{text-wrap:pretty}
-@media(max-width:767px){.hero-lede span{display:inline}}
 .clients-heading h2{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;line-height:1.2}
 .clients-title-label{padding:9px 24px;margin:0;font-size:1.04em}
 .owner-heading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:44px;align-items:end}
@@ -160,3 +159,4 @@ p{text-wrap:pretty}
 .owner-heading>p{grid-column:3;max-width:none;margin:0}
 @media(max-width:1000px){.owner-heading{display:block}.owner-heading>p{max-width:none;margin-top:22px}}
 @media(max-width:767px){.clients-heading h2{gap:9px;line-height:1.2}.clients-title-label{padding:7px 19px;margin:0;font-size:1em}.owner-heading{display:block}}
+@media(max-width:767px){.brand-line>.wrap{justify-items:center;text-align:center}.brand-line span{justify-content:center;font-size:14px}.brand-line svg{width:22px;height:22px}}
