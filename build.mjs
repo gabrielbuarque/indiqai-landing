@@ -7,7 +7,8 @@ const [html, css] = await Promise.all([
   readFile('index.html', 'utf8'), readFile('styles.css', 'utf8')
 ]);
 await writeFile('site/index.html', html.replace(
-  '<link rel="stylesheet" href="./styles.css">', `<style>${css}</style>`
+  /<link rel="stylesheet" href="\.\/styles\.css(?:\?[^\"]*)?">/,
+  `<style>${css}</style>`
 ));
 for (const file of ['site.js', 'llms.txt', 'robots.txt', 'sitemap.xml']) {
   await cp(file, `site/${file}`);
@@ -24,7 +25,7 @@ async function buildPages(directory) {
       const prefix = '../'.repeat(depth);
       const pageCss = css.replaceAll("url('./assets/", `url('${prefix}assets/`);
       await mkdir(`site/${directory}`, { recursive: true });
-      await writeFile(`site/${path}`, page.replace(/<link rel="stylesheet" href="[^"]*styles\.css">/, `<style>${pageCss}</style>`));
+      await writeFile(`site/${path}`, page.replace(/<link rel="stylesheet" href="[^"]*styles\.css(?:\?[^"]*)?">/, `<style>${pageCss}</style>`));
     }
   }
 }
